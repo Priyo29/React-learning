@@ -1,0 +1,23 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is my first go at learning REACT",
+  "homepage": "https://github.com/Priyo29/React-learning#readme",
+  "bugs": {
+    "url": "https://github.com/Priyo29/React-learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyo29/React-learning.git"
+  },
+  "license": "ISC",
+  "author": "Priyabrata Mondal",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
