@@ -19,42 +19,28 @@
 
     Transitive dependencies - the dependecies that we download also have their own dependencies
 
-*/  
+*/
 
-
-import React from "react";
+import React, { createElement as ce } from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-    "h1",
-    {
-        id: "title1",
-        key: "1h",
-    },
-    "Heading 1 teri mkc"
+const heading = ce(
+  "h1",
+  {
+    id: "title1",
+    key: "1h",
+  },
+  "Heading 1 teri mkc",
 );
 
-const heading2 = React.createElement(
-    "h2",
-    {
-        id: "title2",
-        key: "2h",
-    },
-    "Heading 2"
+// JSX
+
+const heading2 = (
+  <h1 id="title" keys="h2">
+    Namastwe Priyo
+  </h1> 
 );
 
-const container=React.createElement(
-    "div",
-    {
-        id : "container",
-        
-    },
-    [heading, heading2]
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-console.log(heading);
-
-const root= ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(container);
-
+root.render(heading);
