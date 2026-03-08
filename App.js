@@ -1,5 +1,6 @@
 /*
 
+    Crested A server - npx
     HMR-Hot Module Reloading
     File Watcher Algoritm- C++
     Bundling
@@ -12,6 +13,11 @@
     compression
     Compatibility with older version (polyfills)
     Can create HTTPS on dev
+    port Number 
+    Consistent hashing
+    zero config
+
+    Transitive dependencies - the dependecies that we download also have their own dependencies
 
 */  
 
