@@ -1,50 +1,39 @@
-/*
-
-    Crested A server - npx
-    HMR-Hot Module Reloading
-    File Watcher Algoritm- C++
-    Bundling
-    Minify
-    Cleaning our Code
-    Dev abd Production Build
-    Super Fast build Algo
-    Image optimization
-    Caching while development
-    compression
-    Compatibility with older version (polyfills)
-    Can create HTTPS on dev
-    port Number 
-    Consistent hashing
-    zero config
-
-    Transitive dependencies - the dependecies that we download also have their own dependencies
-
-*/
-
-import React, { createElement as ce } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = ce(
-  "h1",
-  {
-    id: "title1",
-    key: "1h",
-  },
-  "Heading 1",
+const Title= ()=>(
+  <h1>Nomo Nomo Dugga Thakur</h1>
 );
 
-// JSX // This is is the format of JSX that is alike HTML but not same , this is intertpreted by babel and convert into JS
 
-  
-// JSX => uses React.createElement => Object =>HTML(DOM)
+// React Component   //- Functional -NEW way of writing code 
+// Good practice to write the name of the component with capital letter
+var xyz=90;
+//Composing Components
+const HeaderComponent =()=>{
+  return (
+    <div>
+      <Title />   
+      {Title()}  
+      {xyz}
+      {console.log("Priyabrata Mondal")}  { /*it is shown in the console of the inspect*/ }
+      <h1>Functional Component</h1>
+      <h2>Header with H2 tag</h2>
+    </div>
+  );
+}
 
-const heading2= (
-  <h1 id="title" keys="h2">
-    Namastwe Priyo
-  </h1> 
-);
+// const HeaderComponent2 =()=>(
+//     <div>
+//       <h1>Functional Component</h1>
+//       <h2>Header with H2 tag</h2>
+//     </div>
+// );              // Both valid code 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
 
+//async defer
+// root.render(heading); //React element
+root.render(<HeaderComponent />);
+// root.render(<HeaderComponent2 />);
