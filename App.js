@@ -30,12 +30,15 @@ const heading = ce(
     id: "title1",
     key: "1h",
   },
-  "Heading 1 teri mkc",
+  "Heading 1",
 );
 
-// JSX
+// JSX // This is is the format of JSX that is alike HTML but not same , this is intertpreted by babel and convert into JS
 
-const heading2 = (
+  
+// JSX => uses React.createElement => Object =>HTML(DOM)
+
+const heading2= (
   <h1 id="title" keys="h2">
     Namastwe Priyo
   </h1> 
@@ -44,3 +47,4 @@ const heading2 = (
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(heading);
+
